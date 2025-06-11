@@ -3,8 +3,8 @@ package it.auties.analyzer
 import it.auties.whatsapp.binary.BinaryDecoder
 import it.auties.whatsapp.crypto.AesGcm
 import it.auties.whatsapp.model.node.Node
-import org.openqa.selenium.devtools.v128.network.model.WebSocketFrameReceived
-import org.openqa.selenium.devtools.v128.network.model.WebSocketFrameSent
+import org.openqa.selenium.devtools.v137.network.model.WebSocketFrameReceived
+import org.openqa.selenium.devtools.v137.network.model.WebSocketFrameSent
 import java.util.*
 import kotlin.math.max
 
