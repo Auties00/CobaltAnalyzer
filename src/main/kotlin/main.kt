@@ -1,12 +1,12 @@
 package it.auties.analyzer
 
-import org.openqa.selenium.devtools.v137.debugger.Debugger
-import org.openqa.selenium.devtools.v137.network.Network
+import org.openqa.selenium.devtools.v143.debugger.Debugger
+import org.openqa.selenium.devtools.v143.network.Network
 import java.util.Optional.empty
 
 val whatsappKeys: Keys = Keys()
 
-fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
+fun main() {
     val driver = initialize()
     val tools = driver.devTools
     tools.createSession()
@@ -21,7 +21,7 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
         onBreakpointTriggered(tools, pausedEvent)
     })
 
-    tools.send(Network.enable(empty(), empty(), empty()))
+    tools.send(Network.enable(empty(), empty(), empty(), empty(), empty()))
 
     tools.addListener(Network.webSocketFrameSent(), { webSocketFrameSentEvent ->
         handleSentMessage(webSocketFrameSentEvent)
@@ -32,4 +32,9 @@ fun main(@Suppress("UNUSED_PARAMETER") args: Array<String>) {
     })
 
     driver["https://web.whatsapp.com/"]
+
+    println("Press Enter to exit...")
+    readlnOrNull()
+
+    driver.quit()
 }

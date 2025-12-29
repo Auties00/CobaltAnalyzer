@@ -74,13 +74,13 @@
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v137</artifactId>
-            <version>4.33.0</version>
+            <artifactId>selenium-devtools-v143</artifactId>
+            <version>4.39.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.9.2</version>
+            <version>6.1.0</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>

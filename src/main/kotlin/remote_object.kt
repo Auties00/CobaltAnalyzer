@@ -1,12 +1,12 @@
 package it.auties.analyzer
 
 import org.openqa.selenium.devtools.DevTools
-import org.openqa.selenium.devtools.v137.runtime.Runtime
-import org.openqa.selenium.devtools.v137.debugger.model.CallFrame
-import org.openqa.selenium.devtools.v137.debugger.model.Scope
-import org.openqa.selenium.devtools.v137.runtime.model.PropertyDescriptor
-import org.openqa.selenium.devtools.v137.runtime.model.RemoteObject
-import org.openqa.selenium.devtools.v137.runtime.model.RemoteObjectId
+import org.openqa.selenium.devtools.v143.runtime.Runtime
+import org.openqa.selenium.devtools.v143.debugger.model.CallFrame
+import org.openqa.selenium.devtools.v143.debugger.model.Scope
+import org.openqa.selenium.devtools.v143.runtime.model.PropertyDescriptor
+import org.openqa.selenium.devtools.v143.runtime.model.RemoteObject
+import org.openqa.selenium.devtools.v143.runtime.model.RemoteObjectId
 import java.util.*
 
 fun getKeypairObjectId(frame: CallFrame): RemoteObjectId = frame.scopeChain
